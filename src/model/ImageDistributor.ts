@@ -63,6 +63,7 @@ export class ImageDistributor{
 
         this.renderingImages = true
         if (scrollHeight + clientHeight * 5 / 4 >= this.currentHeight){
+            this.maxHeight = scrollHeight + clientHeight * 5 / 4
             this.fetchMoreImages()
         }
 
